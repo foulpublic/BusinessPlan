@@ -365,3 +365,32 @@ footer {
     text-align: center;
   }
 }
+
+.navibar {
+  background-color: #fff;
+  height: 360px;
+  padding: 20px;
+}
+.right-contents{
+  background-color: #fff;
+  width: 150px;
+  height:100px;
+  padding: 20px;
+  margin-top: 36px;
+  margin-right: 60px;
+  float: right;
+}
+.right-downcontents{
+  background-color: #fff;
+  width: 150px;
+  height:100px;
+  padding: 20px;
+  margin-top: 36px;
+  margin-right: 60px;
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
