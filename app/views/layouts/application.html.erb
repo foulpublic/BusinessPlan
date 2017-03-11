@@ -22,6 +22,7 @@
           <% end %>
       </div>
     </header>
+  <% if user_signed_in? %>
   <div class = "right-contents">
 　 <div class="right-up" >
     <a>投入率  </a>
@@ -32,8 +33,9 @@
 　 <a>1位　サービスA</a>
    </div>
   </div>
-
+ <% end %>
+<div class = "indexmain">
 <%= yield %>
-
+</div>
 </body>
 </html>

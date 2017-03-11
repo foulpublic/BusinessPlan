@@ -3,4 +3,5 @@ Rails.application.routes.draw do
    get 'index' => 'plans#index'
    get 'index_nologin' => 'plans#index_nologin'
    root 'plans#index'
+   resources :plans
 end

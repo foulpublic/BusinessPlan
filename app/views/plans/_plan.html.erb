@@ -1,0 +1,15 @@
+
+        <tr>
+         <td> <%= plan.id %> </td>
+         <td>
+         <%= form_for @plan do |f| %>
+          <input id="plan_name" name="plan_name" size="30" type="text" value= <%= plan.plan_name %>>
+          <%= f.submit '更新' %>
+          <% end %>
+        </td>
+         <td>
+         <%= form_for @plan do |f| %>
+          <input id="service_id" name="servic_id" size="30" type="text" value= <%= plan.service_id %>>
+          <% end %>
+        </td>
+        </tr>

@@ -11,27 +11,79 @@
      <li id="fifth">社取費用</li>
      <li id="sixth">投資</li>
    </ul>
-
    <div class="contents">
      <div class="first">
-       <p>1円</p>
-     </div>
-      <div class="second">
-       <p>2円</p>
-     </div>
-     <div class="third">
-       <p>3円</p>
-     </div>
-     <div class="forth">
-       <p>4円</p>
-     </div>
-      <div class="fifth">
-        <p>5円</p>
+      <table>
+       <thead>
+         <tr>
+           <th>ID</th>
+           <th>施策名</th>
+           <th>サービスコード</th>
+         </tr>
+       <%= render @plans %>
+       </thead>
+     </table>
+       <%= form_for @plan do |f| %>
+      <%= f.text_field :plan_name %>
+       <%= f.submit '投入' %>
+      <% end %>
+  　</div>
+    <div class="second">
+     <table >
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>施策名</th>
+        </tr>
+      <%= render @plans %>
+      </tbody>
+    </table>
     </div>
-      <div class="sixth">
-       <p>6円</p>
-      </div>
+    <div class="third">
+    <table class="bordered">
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>施策名</th>
+        </tr>
+      <%= render @plans %>
+      </tbody>
+    </table>
     </div>
+    <div class="forth">
+    <table>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>施策名</th>
+        </tr>
+        <%= render @plans %>
+      </tbody>
+    </table>
+    </div>
+    <div class="fifth">
+    <table>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>施策名</th>
+        </tr>
+      <%= render @plans %>
+      </tbody>
+    </table>
+    </div>
+    <div class="sixth">
+    <table>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>施策名</th>
+        </tr>
+      <%= render @plans %>
+      </tbody>
+    </table>
+    </div>
+  </div>
   </div>
 </div>
 
